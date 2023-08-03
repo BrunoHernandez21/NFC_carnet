@@ -1,0 +1,14 @@
+{
+    "app.name":"Name Aplication",
+    "app.name-extend":"Exxtended Name Aplication",
+    
+    "home.input.buy":"Enter the amount",
+    "home.response.ok":"Purchased satisfactorily",
+    "home.response.error":"Error",
+    "home.response.400":"Wallet not found",
+    "home.response.500":"Unespected error",
+    "home.response.501":"Has no credit in the wallet",
+    "home.send.ok":"Message sent",
+    "home.send.error.credit":"Does not has credit",
+    "home.send.error.500":"Can not send the sms"
+}
