@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:background_sms/background_sms.dart';
-import 'package:flutter_nfc_kit/flutter_nfc_kit.dart';
 import 'package:nfc_app/src/core/definitions/enviroments.dart';
 import 'package:nfc_app/src/core/utils/auto_fill_sms.dart';
 import 'package:nfc_app/src/core/utils/nfc.dart';
