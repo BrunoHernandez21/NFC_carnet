@@ -35,7 +35,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   }
   sendAmount(String amount ){
     add(OnSendAmount(amount: amount));
-
+    listenerSMS();
     UtilsNFC.searchNFC().then((resp) {
       if (resp == null){
         add(OnError(error: "error"));
@@ -55,7 +55,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   listenerSMS(){
     AutoFillSMS.listenerSMS().then((value) {
       if(value != null){
-        add(OnCatchSms(response: value.split(":").last));
+        add(OnCatchSms(response: value));
       } else {
         add(OnError(error: "error"));
       }
